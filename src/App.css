@@ -1,0 +1,66 @@
+body {
+  background: #222;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links li {
+  margin: 0.5rem 0;
+}
+
+.nav-links a {
+  color: #5277ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.login-page {
+  margin-top: 2rem;
+}
+
+.login-page input {
+  background: #222;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.login-page button {
+  background: #111;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: #f6faff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Removed invalid JSX/HTML code. Place this in your React component file instead. */

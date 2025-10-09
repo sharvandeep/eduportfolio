@@ -1,0 +1,197 @@
+.login-super-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #eaf6ff 0%, #f6faff 100%);
+  display: flex;
+  flex-direction: column;
+}
+.login-headerbar {
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0 3px 22px #3777fe13;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 0;
+  height: 82px;
+  justify-content: center;
+}
+.login-header-logo {
+  background: linear-gradient(90deg, #3777fe 60%, #64adea 100%);
+  color: #fff;
+  border-radius: 16px;
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 0.55rem 1.25rem;
+  margin-right: 1.28rem;
+  letter-spacing: 1.2px;
+  box-shadow: 0 2px 18px #3777fe47;
+  display: inline-block;
+}
+.login-header-title {
+  font-size: 2.26rem;
+  color: #234588;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px #acd4ff29;
+  display: inline-block;
+}
+
+.login-bg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+.login-board {
+  background: #fff;
+  border-radius: 2.4rem;
+  box-shadow: 0 16px 60px #3777fe21, 0 6px 30px #7da1d03b;
+  width: 540px; /* wider card */
+  min-width: 340px;
+  max-width: 95vw;
+  height: 540px; /* more height for perfect ratio */
+  min-height: 440px;
+  padding-bottom: 2.6rem;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: width 0.3s, height 0.3s;
+}
+.role-board {
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  background: #f8fbff;
+  box-shadow: 0 6px 24px #b7d0fd27;
+}
+.role-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 2.2rem 1rem;
+  background: #f6faff;
+  transition: background 0.17s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.role-col.active {
+  background: #e7f3ff;
+  box-shadow: 0 2px 32px #3777fe13;
+  z-index: 3;
+}
+.role-btn {
+  border: 1.4px solid #3777fe;
+  background: #fff;
+  font-size: 1.16rem;
+  color: #1d2844;
+  font-weight: 600;
+  padding: 0.78rem 1.85rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 5px 14px #3777fe0f;
+  margin-bottom: 1.3rem;
+  cursor: pointer;
+  transition: box-shadow 0.16s, background 0.15s, color 0.12s;
+}
+.role-col.active .role-btn {
+  background: #eef7ff;
+  color: #3777fe;
+  box-shadow: 0 9px 32px #3777fe1e, 0 4px 16px #90aafc22;
+  border: 2.2px solid #3777fe;
+}
+.role-desc {
+  text-align: center;
+  font-size: 1rem;
+  color: #3f5f9e;
+  font-weight: 450;
+  margin-top: 0.25rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.1rem 2.1rem 0 2.1rem;
+  gap: 0.7rem;
+}
+.login-form label {
+  font-weight: 600;
+  color: #253449;
+  margin-bottom: 0.18rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.7px;
+}
+.login-form input {
+  background: #eaf2ff;
+  border: 1.4px solid #b6d2fa;
+  outline: none;
+  border-radius: 1.05rem;
+  font-size: 1.17rem;
+  color: #1d2844;
+  padding: 0.86rem 1.36rem;
+  box-shadow: 0 2px 13px #b7d0fd14;
+  transition: border 0.15s, box-shadow 0.12s;
+  margin-bottom: 0.13rem;
+}
+.login-form input:focus {
+  border: 2px solid #3777fe;
+  background: #d6eafd;
+  box-shadow: 0 3px 22px #3777fe1b;
+}
+.form-note {
+  font-size: 1.02rem;
+  color: #6496cb;
+  margin-top: 0.09rem;
+  margin-bottom: 0.89rem;
+  text-align: left;
+  letter-spacing: 0.4px;
+}
+.submit-btn {
+  background: linear-gradient(90deg, #3777fe 58%, #64adea 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.20rem;
+  border: none;
+  border-radius: 1.05rem;
+  padding: 1.06rem 0;
+  margin-top: 1.44rem;
+  box-shadow: 0 10px 38px #3777fe1c, 0 2px 12px #71a6fe12;
+  cursor: pointer;
+  transition: box-shadow 0.17s, background 0.14s;
+  letter-spacing: 0.7px;
+}
+.submit-btn:hover, .submit-btn:focus {
+  background: #2451c9;
+  box-shadow: 0 12px 38px #3777fe32, 0 2px 12px #71a6fe35;
+}
+.error {
+  color: #e44;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.06rem;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 600px) {
+  .login-board {
+    width: 98vw;
+    padding-bottom: 1.1rem;
+    margin-top: 11vw;
+    min-width: 0;
+  }
+  .login-form {
+    padding: 2vw 3vw 0 3vw;
+  }
+  .login-headerbar {
+    height: 62px;
+  }
+  .login-header-title {
+    font-size: 1.22rem;
+    letter-spacing: 1px;
+  }
+  .login-header-logo {
+    font-size: 1.08rem;
+    padding: 0.33rem 0.66rem;
+  }
+}

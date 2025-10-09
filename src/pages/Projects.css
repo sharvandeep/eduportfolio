@@ -1,0 +1,105 @@
+.project-container {
+  max-width: 1200px;
+  margin: 2.4rem auto;
+  padding: 0 4vw;
+}
+
+/* Title styling */
+.project-title {
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 2.2rem;
+  margin-top: 0.8rem;
+  color: #1a2859;
+  letter-spacing: 1.3px;
+  text-shadow: 0 3px 17px #eaf6ff, 0 1px 7px #b7d0fd55;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* New Project button */
+.new-project-btn {
+  background: #3777fe;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.82rem 2.4rem;
+  font-weight: 700;
+  font-size: 1.12rem;
+  margin-left: 1.5rem;
+  box-shadow: 0 7px 25px #3777fe61;
+  cursor: pointer;
+  transition: background 0.13s, box-shadow 0.18s;
+}
+.new-project-btn:hover,
+.new-project-btn:focus {
+  background: #264fbb;
+}
+
+/* No projects hint */
+.project-none {
+  font-size: 1.23rem;
+  color: #909cc3;
+  text-align: center;
+  margin: 2rem 0 1.7rem 0;
+}
+
+/* Project card styling */
+.project-card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 1.7rem 2.3rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 30px #1a3aa545, 0 1.5px 9px #3777fe18;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 13px 40px #3864b017, 0 7px 33px #3777fe33;
+}
+
+.project-card-title {
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+  color: #2a367d;
+}
+.project-card-desc {
+  color: #5a6690;
+  font-size: 1.08rem;
+  margin-bottom: 0.95rem;
+}
+.project-card-files {
+  color: #3969f6;
+  font-size: 1.01rem;
+  margin-top: 0.08rem;
+}
+.project-card-files li {
+  margin-bottom: 0.24rem;
+}
+.project-card-files a {
+  color: #3777fe;
+  text-decoration: underline;
+  transition: color 0.14s;
+}
+.project-card-files a:hover {
+  color: #264fbb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .project-container {
+    max-width: 99vw;
+    padding: 0 2vw;
+  }
+  .project-title {
+    font-size: 2.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+  .project-card {
+    padding: 1.1rem 0.85rem;
+  }
+}

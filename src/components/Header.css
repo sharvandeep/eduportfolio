@@ -1,0 +1,8 @@
+/* components/Header.css */
+.site-header {
+  position: sticky;          /* or fixed */
+  top: 0;
+  height: 64px;
+  z-index: 1000;
+}
+.site-header * { pointer-events: auto; }
