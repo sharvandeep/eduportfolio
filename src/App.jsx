@@ -10,6 +10,8 @@ import UploadProject from './pages/UploadProject';
 import FacultyDashboard from './pages/FacultyDashboard';
 import FacultyStudentProjects from './pages/FacultyStudentProjects';
 import FacultyStudentPortfolio from './pages/FacultyStudentPortfolio';
+import Feedback from './pages/Feedback';
+import FacultyFeedback from './pages/FacultyFeedback';
 
 function StudentLayout() {
   return (
@@ -74,12 +76,20 @@ export default function App() {
           <Route path="/projects" element={<Projects projects={projects} />} />
           <Route path="/portfolios" element={<Portfolios portfolio={portfolio} setPortfolio={setPortfolio} />} />
           <Route path="/upload" element={<UploadProject setProjects={setProjects} projects={projects} />} />
+            <Route path="/feedback" element={<Feedback />} />
+              <Route path="/faculty/feedback" element={<FacultyFeedback />} /> {/* NEW */}
+
+
         </Route>
 
         <Route element={<FacultyLayout />}>
           <Route path="/faculty" element={<FacultyDashboard />} />
           <Route path="/faculty/student/:id/projects" element={<FacultyStudentProjects />} />
           <Route path="/faculty/student/:id/portfolio" element={<FacultyStudentPortfolio />} />
+            <Route path="/faculty/feedback" element={<FacultyFeedback />} /> 
+            <Route path="/faculty/feedback/:id" element={<FacultyFeedback />} />
+
+          
         </Route>
 
         <Route path="*" element={<Navigate to={studentId ? "/student" : "/login"} replace />} />
